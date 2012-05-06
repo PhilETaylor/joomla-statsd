@@ -17,13 +17,13 @@ class StatsDControllerStatsD extends JControllerForm
                 $data = JRequest::getVar('jform', array(), 'post', 'array');
                 $model = $this->getModel();
 				
-				$result = $model->post($data);
+		$result = $model->post($data);
 				
                 if(!$result) {
-                        $msg = JText::_( 'COM_AUTOTWEET_MSG_ERROR_MESSAGEPOSTED' ) . ' ('.$result.') (' . $model->getError() . ')';
+                        $msg = JText::_( 'COM_STATSD_MSG_ERROR_SAVECONFIG' ) . ' ('.$result.') (' . $model->getError() . ')';
 
                 } else {
-                        $msg = JText::_( 'COM_AUTOTWEET_MSG_SUCCESS_MESSAGEPOSTED' );
+                        $msg = JText::_( 'COM_STATSD_MSG_SUCCESS_SAVECONFIG' );
                 }
 
                 $link   = 'index.php?option=com_statsd&view=statsd';
