@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install version="2.5" type="plugin" group="system" method="upgrade">
+        <name>StatsD System</name>
+        <author>Michael Marod</author>
+        <creationDate>April 2012</creationDate>
+        <copyright>(C) 2012 Michael Marod. All rights reserved.</copyright>
+        <license>GNU General Public License version 2 or later</license>
+        <authorEmail>michael@michaelmarod.com</authorEmail>
+        <authorUrl>www.michaelmarod.com</authorUrl>
+        <version>0.0.1</version>
+        <description>PLG_SYSTEM_STATSD_XML_DESCRIPTION</description>
+        <files>
+                <filename plugin="statsd">statsd.php</filename>
+                <filename>index.html</filename>
+        </files>
+        <languages>
+        </languages>
+        <config>
+	        <fields name="params">
+		        	<fieldset name="general" label="PLG_SYSTEM_STATSD_PARAM_GENERAL_LABEL">
+                        <field name="subPrefix" type="text" default="" label="subPrefix" description="An optional additional prefix for this group. It will be appended to the global prefix that was set in the component." ></field>
+					</fieldset>
+                    <fieldset name="system" label="PLG_SYSTEM_STATSD_PARAM_SYSTEM_LABEL">
+                            <field name="onAfterInitialise" type="radio" default="0" label="onAfterInitialise" description="Enable onAfterInitialise Statistics" >
+								<option value="1">On</option>
+                            	<option value="0">Off</option>
+                            </field>
+                            <field name="onAfterRoute" type="radio" default="0" label="onAfterRoute" description="Enable onAfterRoute Statistics" >
+								<option value="1">On</option>
+                            	<option value="0">Off</option>
+                            </field>
+                            <field name="onAfterDispatch" type="radio" default="0" label="onAfterDispatch" description="Enable onAfterDispatch Statistics" >
+								<option value="1">On</option>
+                            	<option value="0">Off</option>
+                            </field>
+                            <field name="onAfterRender" type="radio" default="0" label="onAfterRender" description="Enable onAfterRender Statistics" >
+								<option value="1">On</option>
+                            	<option value="0">Off</option>
+                            </field>
+                    </fieldset>
+            </fields>
+        </config>
+</install>

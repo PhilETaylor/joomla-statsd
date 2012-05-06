@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="component" version="2.5.0" method="upgrade">
+	<name>StatsD</name>
+	<author>Michael Marod</author>
+	<creationDate>May 2012</creationDate>
+	<copyright>Copyright (c) 2012 Michael Marod. All rights reserved.</copyright>
+	<authorEmail>michael@michaelmarod.com</authorEmail>
+	<authorUrl>www.michaelmarod.com</authorUrl>
+	<version>0.0.1</version>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<description>Sends messages from a Joomla application to a StatsD server.</description>
+	<installfile>install.statsd.php</installfile>
+	<uninstallfile>uninstall.statsd.php</uninstallfile>
+	<scriptfile>script.k2.php</scriptfile>
+	<install>
+		<sql>
+			<file driver="mysqli" charset="utf8">install.mysql.sql</file>
+			<file driver="mysql" charset="utf8">install.mysql.sql</file>
+		</sql>
+	</install>
+	<uninstall>
+		<sql>
+			<file driver="mysqli" charset="utf8">uninstall.mysql.sql</file>
+			<file driver="mysql" charset="utf8">uninstall.mysql.sql</file>
+		</sql>
+	</uninstall>
+	<files>
+	</files>
+	<languages>
+	</languages>
+	<administration>
+		<files folder="administrator/components/com_statsd">
+			<filename>statsd.php</filename>
+			<filename>controller.php</filename>
+			<filename>install.mysql.sql</filename>
+			<filename>uninstall.mysql.sql</filename>
+			<folder>language</folder>
+			<folder>controllers</folder>
+			<folder>helpers</folder>
+			<folder>views</folder>
+			<folder>models</folder>
+		</files>
+		<languages folder="administrator/components/com_statsd/language">
+			<language tag="en-GB">en-GB/en-GB.com_statsd.ini</language>
+			<language tag="en-GB">en-GB/en-GB.com_statsd.sys.ini</language>
+			<language tag="en-GB">en-GB/en-GB.plg_authentication_statsd.ini</language>
+			<language tag="en-GB">en-GB/en-GB.plg_authentication_statsd.sys.ini</language>
+			<language tag="en-GB">en-GB/en-GB.plg_content_statsd.ini</language>
+			<language tag="en-GB">en-GB/en-GB.plg_content_statsd.sys.ini</language>
+			<language tag="en-GB">en-GB/en-GB.plg_editors_statsd.ini</language>
+			<language tag="en-GB">en-GB/en-GB.plg_editors_statsd.sys.ini</language>
+			<language tag="en-GB">en-GB/en-GB.plg_finder_statsd.ini</language>
+			<language tag="en-GB">en-GB/en-GB.plg_finder_statsd.sys.ini</language>
+			<language tag="en-GB">en-GB/en-GB.plg_k2_statsd.ini</language>
+			<language tag="en-GB">en-GB/en-GB.plg_k2_statsd.sys.ini</language>
+			<language tag="en-GB">en-GB/en-GB.plg_search_statsd.ini</language>
+			<language tag="en-GB">en-GB/en-GB.plg_search_statsd.sys.ini</language>
+			<language tag="en-GB">en-GB/en-GB.plg_system_statsd.ini</language>
+			<language tag="en-GB">en-GB/en-GB.plg_system_statsd.sys.ini</language>
+			<language tag="en-GB">en-GB/en-GB.plg_user_statsd.ini</language>
+			<language tag="en-GB">en-GB/en-GB.plg_user_statsd.sys.ini</language>
+		</languages>
+	</administration>
+	<config>
+	</config>
+	<modules>
+	</modules>
+	<plugins>
+		<plugin plugin="statsd" group="authentication" />
+		<plugin plugin="statsd" group="content" />
+		<plugin plugin="statsd" group="editors" />
+		<plugin plugin="statsd" group="finder" />
+		<plugin plugin="statsd" group="k2" />
+		<plugin plugin="statsd" group="search" />
+		<plugin plugin="statsd" group="system" />
+		<plugin plugin="statsd" group="user" />
+	</plugins>
+</install>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+        <fieldset name="statsdconfig" addfieldpath="/administrator/components/com_statsd/models/fields">
+        	<field name="statsdhost" type="text" class="inputbox" size="50" maxlength="255" label="COM_STATSD_VIEW_CONFIG_HOST_TITLE" description="COM_STATSD_VIEW_CONFIG_HOST_DESC" />
+
+        	<field name="statsdport" type="text" class="inputbox" size="5" maxlength="5" label="COM_STATSD_VIEW_CONFIG_PORT_TITLE" description="COM_STATSD_VIEW_CONFIG_PORT_DESC" />
+
+        	<field name="statsdprefix" type="text" class="inputbox" size="50" maxlength="255" label="COM_STATSD_VIEW_CONFIG_PREFIX_TITLE" description="COM_STATSD_VIEW_CONFIG_PREFIX_DESC" />
+        </fieldset>
+</form>

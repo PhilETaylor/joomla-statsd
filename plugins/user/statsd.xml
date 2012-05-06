@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install version="2.5" type="plugin" group="user" method="upgrade">
+        <name>StatsD User</name>
+        <author>Michael Marod</author>
+        <creationDate>April 2012</creationDate>
+        <copyright>(C) 2012 Michael Marod. All rights reserved.</copyright>
+        <license>GNU General Public License version 2 or later</license>
+        <authorEmail>michael@michaelmarod.com</authorEmail>
+        <authorUrl>www.michaelmarod.com</authorUrl>
+        <version>0.0.1</version>
+        <description>PLG_USER_STATSD_XML_DESCRIPTION</description>
+        <files>
+                <filename plugin="statsd">statsd.php</filename>
+                <filename>index.html</filename>
+        </files>
+        <languages>
+        </languages>
+        <config>
+	        <fields name="params">
+		        	<fieldset name="general" label="PLG_USER_STATSD_PARAM_GENERAL_LABEL">
+                        <field name="subPrefix" type="text" default="" label="subPrefix" description="An optional additional prefix for this group. It will be appended to the global prefix that was set in the component." ></field>
+					</fieldset>
+                    <fieldset name="system" label="PLG_USER_STATSD_PARAM_USER_LABEL">
+                            <field name="onUserBeforeDelete" type="radio" default="0" label="onUserBeforeDelete" description="Enable onUserBeforeDelete Statistics" >
+								<option value="1">On</option>
+                            	<option value="0">Off</option>
+                            </field>
+                            <field name="onUserAfterDelete" type="radio" default="0" label="onUserAfterDelete" description="Enable onUserAfterDelete Statistics" >
+								<option value="1">On</option>
+                            	<option value="0">Off</option>
+                            </field>
+                            <field name="onUserBeforeSave" type="radio" default="0" label="onUserBeforeSave" description="Enable onUserBeforeSave Statistics" >
+								<option value="1">On</option>
+                            	<option value="0">Off</option>
+                            </field>
+                            <field name="onUserAfterSave" type="radio" default="0" label="onUserAfterSave" description="Enable onUserAfterSave Statistics" >
+								<option value="1">On</option>
+                            	<option value="0">Off</option>
+                            </field>
+                            <field name="onUserLogin" type="radio" default="0" label="onUserLogin" description="Enable onUserLogin Statistics" >
+								<option value="1">On</option>
+                            	<option value="0">Off</option>
+                            </field>
+                            <field name="onUserLogout" type="radio" default="0" label="onUserLogout" description="Enable onUserLogout Statistics" >
+								<option value="1">On</option>
+                            	<option value="0">Off</option>
+                            </field>
+                    </fieldset>
+            </fields>
+        </config>
+</install>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install version="2.5" type="plugin" group="k2" method="upgrade">
+        <name>StatsD K2</name>
+        <author>Michael Marod</author>
+        <creationDate>April 2012</creationDate>
+        <copyright>(C) 2012 Michael Marod. All rights reserved.</copyright>
+        <license>GNU General Public License version 2 or later</license>
+        <authorEmail>michael@michaelmarod.com</authorEmail>
+        <authorUrl>www.michaelmarod.com</authorUrl>
+        <version>0.0.1</version>
+        <description>PLG_K2_STATSD_XML_DESCRIPTION</description>
+        <files>
+                <filename plugin="statsd">statsd.php</filename>
+                <filename>index.html</filename>
+        </files>
+        <languages>
+        </languages>
+        <config>
+	        <fields name="params">
+		        	<fieldset name="general" label="PLG_K2_STATSD_PARAM_GENERAL_LABEL">
+                        <field name="subPrefix" type="text" default="" label="subPrefix" description="An optional additional prefix for this group. It will be appended to the global prefix that was set in the component." ></field>
+					</fieldset>
+                    <fieldset name="k2" label="PLG_K2_STATSD_PARAM_K2_LABEL">
+                            <field name="onK2PrepareContent" type="radio" default="0" label="onK2PrepareContent" description="Enable onK2PrepareContent Statistics" >
+								<option value="1">On</option>
+                            	<option value="0">Off</option>
+                            </field>
+                            <field name="onK2AfterDisplay" type="radio" default="0" label="onK2AfterDisplay" description="Enable onK2AfterDisplay Statistics" >
+								<option value="1">On</option>
+                            	<option value="0">Off</option>
+                            </field>
+                            <field name="onK2BeforeDisplay" type="radio" default="0" label="onK2BeforeDisplay" description="Enable onK2BeforeDisplay Statistics" >
+								<option value="1">On</option>
+                            	<option value="0">Off</option>
+                            </field>
+                            <field name="onK2AfterDisplayTitle" type="radio" default="0" label="onK2AfterDisplayTitle" description="Enable onK2AfterDisplayTitle Statistics" >
+								<option value="1">On</option>
+                            	<option value="0">Off</option>
+                            </field>
+                            <field name="onK2BeforeDisplayContent" type="radio" default="0" label="onK2BeforeDisplayContent" description="Enable onK2BeforeDisplayContent Statistics" >
+								<option value="1">On</option>
+                            	<option value="0">Off</option>
+                            </field>
+                            <field name="onK2AfterDisplayContent" type="radio" default="0" label="onK2AfterDisplayContent" description="Enable onK2AfterDisplayContent Statistics" >
+								<option value="1">On</option>
+                            	<option value="0">Off</option>
+                            </field>
+                            <field name="onK2CategoryDisplay" type="radio" default="0" label="onK2CategoryDisplay" description="Enable onK2CategoryDisplay Statistics" >
+								<option value="1">On</option>
+                            	<option value="0">Off</option>
+                            </field>
+
+                            <field name="onK2UserDisplay" type="radio" default="0" label="onK2UserDisplay" description="Enable onK2UserDisplay Statistics" >
+								<option value="1">On</option>
+                            	<option value="0">Off</option>
+                            </field>
+                    </fieldset>
+            </fields>
+        </config>
+</install>

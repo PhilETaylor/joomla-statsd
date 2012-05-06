@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install version="2.5" type="plugin" group="finder" method="upgrade">
+        <name>StatsD Finder</name>
+        <author>Michael Marod</author>
+        <creationDate>April 2012</creationDate>
+        <copyright>(C) 2012 Michael Marod. All rights reserved.</copyright>
+        <license>GNU General Public License version 2 or later</license>
+        <authorEmail>michael@michaelmarod.com</authorEmail>
+        <authorUrl>www.michaelmarod.com</authorUrl>
+        <version>0.0.1</version>
+        <description>PLG_FINDER_STATSD_XML_DESCRIPTION</description>
+        <files>
+                <filename plugin="statsd">statsd.php</filename>
+                <filename>index.html</filename>
+        </files>
+        <languages>
+        </languages>
+        <config>
+	        <fields name="params">
+		        	<fieldset name="general" label="PLG_FINDER_STATSD_PARAM_GENERAL_LABEL">
+                        <field name="subPrefix" type="text" default="" label="subPrefix" description="An optional additional prefix for this group. It will be appended to the global prefix that was set in the component." ></field>
+					</fieldset>
+                    <fieldset name="finder" label="PLG_FINDER_STATSD_PARAM_FINDER_LABEL">
+                            <field name="onFinderAfterDelete" type="radio" default="0" label="onFinderAfterDelete" description="Enable onFinderAfterDelete Statistics" >
+								<option value="1">On</option>
+                            	<option value="0">Off</option>
+                            </field>
+                            <field name="onFinderAfterSave" type="radio" default="0" label="onFinderAfterSave" description="Enable onFinderAfterSave Statistics" >
+								<option value="1">On</option>
+                            	<option value="0">Off</option>
+                            </field>
+                            <field name="onFinderBeforeSave" type="radio" default="0" label="onFinderBeforeSave" description="Enable onFinderBeforeSave Statistics" >
+								<option value="1">On</option>
+                            	<option value="0">Off</option>
+                            </field>
+                            <field name="onFinderChangeState" type="radio" default="0" label="onFinderChangeState" description="Enable onFinderChangeState Statistics" >
+								<option value="1">On</option>
+                            	<option value="0">Off</option>
+                            </field>
+                            <field name="onFinderCategoryChangeState" type="radio" default="0" label="onFinderCategoryChangeState" description="Enable onFinderCategoryChangeState Statistics" >
+								<option value="1">On</option>
+                            	<option value="0">Off</option>
+                            </field>
+                    </fieldset>
+            </fields>
+        </config>
+</install>
