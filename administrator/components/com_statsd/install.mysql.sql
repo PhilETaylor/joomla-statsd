@@ -6,7 +6,7 @@ CREATE TABLE IF NOT EXISTS `#__statsd_config` (
   PRIMARY KEY (`id`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
-INSERT IGNORE INTO `#__statsd_config` SET `id`=1, `host`='127.0.0.1', `port`=8125, `prefix`='applications.michaelmarod.'; 
+INSERT IGNORE INTO `#__statsd_config` SET `id`=1, `host`='127.0.0.1', `port`=8125, `prefix`=''; 
 
 CREATE TABLE IF NOT EXISTS `#__statsd_events` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
