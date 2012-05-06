@@ -1,4 +1,12 @@
 <?php
+/**
+ * @version             $Id: statsd.php
+ * @package             StatsD
+ * @author              Michael Marod
+ * @copyright           Copyright (c) 2012 Michael Marod. All rights reserved.
+ * @license             GNU/GPL license: http://www.gnu.org/copyleft/gpl.html
+ */
+
 defined('_JEXEC') or die('Restricted access');
 
 require_once (JPATH_COMPONENT_ADMINISTRATOR . DS . 'helpers' . DS . 'statsdposthelper.php');

@@ -1,12 +1,11 @@
 <?php
 /**
-* Base class for AutoTweet backend views
-*
-* @version 1.0
-* @author Ulli Storck
-* @copyright (C) 2009-2011 Ulli Storck
-* @license GNU/GPLv3 www.gnu.org/licenses/gpl-3.0.html
-**/
+ * @version             $Id: statsdview.php
+ * @package             StatsD
+ * @author              Michael Marod
+ * @copyright           Copyright (c) 2012 Michael Marod. All rights reserved.
+ * @license             GNU/GPL license: http://www.gnu.org/copyleft/gpl.html
+ */
 
 // No direct access
 defined( '_JEXEC' ) or die( 'Restricted access' );

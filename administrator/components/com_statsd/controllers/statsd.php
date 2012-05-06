@@ -1,4 +1,12 @@
 <?php
+/**
+ * @version             $Id: statsd.php
+ * @package             StatsD
+ * @author              Michael Marod
+ * @copyright           Copyright (c) 2012 Michael Marod. All rights reserved.
+ * @license             GNU/GPL license: http://www.gnu.org/copyleft/gpl.html
+ */
+
 // No direct access
 defined( '_JEXEC' ) or die( 'Restricted access' );
 
