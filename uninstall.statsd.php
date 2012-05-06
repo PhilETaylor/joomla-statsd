@@ -20,7 +20,7 @@ foreach($plugins as $plugin){
 	$pname = $plugin->getAttribute('plugin');
 	$pgroup = $plugin->getAttribute('group');
 	$db = & JFactory::getDBO();
-	$query = "SELECT `extension_id` FROM #__extensions WHERE `type`='plugin' AND element = ".$db->Quote($pname)." AND folder = ".$db->Quote($pgroup);
+	$query = "SELECT ".$db->nameQuote('extension_id')." FROM ".$db->nameQuote('#__extensions')." WHERE ".$db->nameQuote('type')."=".$db->Quote('plugin')." AND ".$db->nameQuote('element')." = ".$db->Quote($pname)." AND ".$db->nameQuote('folder')." = ".$db->Quote($pgroup);
 	$db->setQuery($query);
 	$IDs = $db->loadResultArray();
 	if (count($IDs)) {
