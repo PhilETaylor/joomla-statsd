@@ -2,7 +2,7 @@ CREATE TABLE IF NOT EXISTS `#__statsd_config` (
   `id` int(11) NOT NULL,
   `host` varchar(255) NOT NULL DEFAULT '127.0.0.1',
   `port` int(11) NOT NULL DEFAULT '8125',
-  `prefix` varchar(255) NOT NULL DEFAULT 'applications.michaelmarod.',
+  `prefix` varchar(255) NOT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8;
 
