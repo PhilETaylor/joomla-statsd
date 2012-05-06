@@ -5,6 +5,10 @@ Joomla StatsD Component
 
 This component hooks into the Joomla event system and sends messages to a StatsD server when events occur. There is one component and 7 plugins. The component is used to configure the StatsD server and supply a prefix for the messages that are sent. The plugins hook into the event system and send messages to the configured StatsD server.
 
+Download
+=============
+You can either git clone this repo and zip it up or download it from http://www.michaelmarod.com/files/statsd/com_statsd-2.5.zip.
+
 Install 
 =============
 1. Go to the Extension Manager and install the zip file.
